@@ -23,15 +23,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e330f64-dcb5-4e84-9845-a93625e5cbd5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features_flutter_modular/app_module.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features_flutter_modular/home/home_module.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features_flutter_modular/home/home_screen.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features_flutter_modular/infos/infos_screen.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features_flutter_modular/models/user_model.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/features_flutter_modular/profile/profile_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/learning_routes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/learning_routes.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features_getx/home/home_getx.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features_getx/infos/infos_getx.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/features_getx/profile/profile_getx.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features_flutter_modular/infos/infos_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features_flutter_modular/infos/infos_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features_flutter_modular/models/user_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/models/user_model.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/features_flutter_modular/profile/profile_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/features_flutter_modular/profile/profile_screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
@@ -62,6 +61,11 @@
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">

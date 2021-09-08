@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:learning_routes/features_flutter_modular/models/user_model.dart';
+import 'package:learning_routes/models/user_model.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({this.user});
