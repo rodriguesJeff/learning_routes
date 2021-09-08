@@ -25,10 +25,7 @@ dependencies:
     sdk: flutter
 
   auto_route: any
-  dio: any
-  mobx: any
-  flutter_mobx: any
-  freezed_annotation: any
+  flutter_modular: any
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -40,8 +37,6 @@ dev_dependencies:
     sdk: flutter
   auto_route_generator: any
   build_runner: any
-  mobx_codegen: any
-  freezed: any
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
