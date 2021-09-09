@@ -1,5 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
+import 'package:learning_routes/features_auto_route/router/material_auto_router.gr.dart';
 
 class BooksTabPage extends StatelessWidget {
   @override
@@ -12,7 +13,7 @@ class BooksTabPage extends StatelessWidget {
         InkWell(
           onTap: () {
             String? id = '123';
-            context.router.pushNamed('/books/$id');
+            context.router.push(BooksRoute(bookId: id));
           },
           child: ListTile(
             title: Text('Código limpo'),
@@ -20,14 +21,26 @@ class BooksTabPage extends StatelessWidget {
           ),
         ),
         SizedBox(height: 10),
-        ListTile(
-          title: Text('Arquitetura limpa'),
-          subtitle: Text(
-              'Aprenda as melhores práticas de construçao de um software que preste'),
+        InkWell(
+          onTap: () {
+            String? id = '456';
+            context.router.push(BooksRoute(bookId: id));
+          },
+          child: ListTile(
+            title: Text('Arquitetura limpa'),
+            subtitle: Text(
+                'Aprenda as melhores práticas de construçao de um software que preste'),
+          ),
         ),
-        ListTile(
-          title: Text('Os segredos da mente milionária'),
-          subtitle: Text('Vai gastar dinheiro mesmo?'),
+        InkWell(
+          onTap: () {
+            String? id = '789';
+            context.router.push(BooksRoute(bookId: id));
+          },
+          child: ListTile(
+            title: Text('Os segredos da mente milionária'),
+            subtitle: Text('Vai gastar dinheiro mesmo?'),
+          ),
         ),
       ],
     );

@@ -10,14 +10,18 @@ import 'package:learning_routes/features_auto_route/profile/profile_page.dart';
 @MaterialAutoRouter(
   replaceInRouteName: 'Page,Route',
   routes: <AutoRoute>[
-    AutoRoute(page: HomePage, initial: true),
-    AutoRoute(page: InfosPage),
-    AutoRoute(page: ProfilePage),
-    AutoRoute(page: DashBoardPage, children: [
-      AutoRoute(page: BooksTabPage),
-      AutoRoute(page: LanguagesTabPage),
-    ]),
-    AutoRoute(path: '/books/:id', page: BooksPage),
+    AutoRoute(path: '/', page: HomePage, initial: true),
+    AutoRoute(path: '/infos', page: InfosPage),
+    AutoRoute(path: '/profile', page: ProfilePage),
+    AutoRoute(
+      path: '/dashboard',
+      page: DashBoardPage,
+      children: [
+        AutoRoute(path: 'books', page: BooksTabPage),
+        AutoRoute(path: 'languages', page: LanguagesTabPage),
+      ],
+    ),
+    AutoRoute(path: '/dashboard/books/book/:id', page: BooksPage),
   ],
 )
 class $RouterApp {}

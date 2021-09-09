@@ -13,6 +13,10 @@ class DashBoardPage extends StatelessWidget {
       builder: (context, child, animation) {
         final tabsRouter = AutoTabsRouter.of(context);
         return Scaffold(
+          appBar: AppBar(
+            title: Text('DASHBOARD'),
+            centerTitle: true,
+          ),
           body: FadeTransition(
             opacity: animation,
             child: child,

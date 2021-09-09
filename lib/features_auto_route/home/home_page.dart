@@ -16,7 +16,7 @@ class HomePage extends StatelessWidget {
             children: [
               ElevatedButton(
                 onPressed: () {
-                  context.router.pushNamed('/infos-page');
+                  context.router.pushNamed('/infos');
                 },
                 child: Text('SEM PARAMETROS'),
               ),
@@ -30,7 +30,7 @@ class HomePage extends StatelessWidget {
               SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
-                  context.router.pushNamed('/dash-board-page');
+                  context.router.pushNamed('/dashboard');
                 },
                 child: Text('DASHBOARD TABS'),
               ),

@@ -65,16 +65,13 @@ class RouterApp extends _i1.RootStackRouter {
   @override
   List<_i1.RouteConfig> get routes => [
         _i1.RouteConfig(HomeRoute.name, path: '/'),
-        _i1.RouteConfig(InfosRoute.name, path: '/infos-page'),
-        _i1.RouteConfig(ProfileRoute.name, path: '/profile-page'),
-        _i1.RouteConfig(DashBoardRoute.name,
-            path: '/dash-board-page',
-            children: [
-              _i1.RouteConfig(BooksTabRoute.name, path: 'books-tab-page'),
-              _i1.RouteConfig(LanguagesTabRoute.name,
-                  path: 'languages-tab-page')
-            ]),
-        _i1.RouteConfig(BooksRoute.name, path: '/books/:id')
+        _i1.RouteConfig(InfosRoute.name, path: '/infos'),
+        _i1.RouteConfig(ProfileRoute.name, path: '/profile'),
+        _i1.RouteConfig(DashBoardRoute.name, path: '/dashboard', children: [
+          _i1.RouteConfig(BooksTabRoute.name, path: 'books'),
+          _i1.RouteConfig(LanguagesTabRoute.name, path: 'languages')
+        ]),
+        _i1.RouteConfig(BooksRoute.name, path: '/dashboard/books/book/:id')
       ];
 }
 
@@ -85,7 +82,7 @@ class HomeRoute extends _i1.PageRouteInfo {
 }
 
 class InfosRoute extends _i1.PageRouteInfo {
-  const InfosRoute() : super(name, path: '/infos-page');
+  const InfosRoute() : super(name, path: '/infos');
 
   static const String name = 'InfosRoute';
 }
@@ -93,7 +90,7 @@ class InfosRoute extends _i1.PageRouteInfo {
 class ProfileRoute extends _i1.PageRouteInfo<ProfileRouteArgs> {
   ProfileRoute({required String? userName})
       : super(name,
-            path: '/profile-page', args: ProfileRouteArgs(userName: userName));
+            path: '/profile', args: ProfileRouteArgs(userName: userName));
 
   static const String name = 'ProfileRoute';
 }
@@ -106,7 +103,7 @@ class ProfileRouteArgs {
 
 class DashBoardRoute extends _i1.PageRouteInfo {
   const DashBoardRoute({List<_i1.PageRouteInfo>? children})
-      : super(name, path: '/dash-board-page', initialChildren: children);
+      : super(name, path: '/dashboard', initialChildren: children);
 
   static const String name = 'DashBoardRoute';
 }
@@ -114,7 +111,7 @@ class DashBoardRoute extends _i1.PageRouteInfo {
 class BooksRoute extends _i1.PageRouteInfo<BooksRouteArgs> {
   BooksRoute({String? bookId})
       : super(name,
-            path: '/books/:id',
+            path: '/dashboard/books/book/:id',
             args: BooksRouteArgs(bookId: bookId),
             rawPathParams: {'id': bookId});
 
@@ -128,13 +125,13 @@ class BooksRouteArgs {
 }
 
 class BooksTabRoute extends _i1.PageRouteInfo {
-  const BooksTabRoute() : super(name, path: 'books-tab-page');
+  const BooksTabRoute() : super(name, path: 'books');
 
   static const String name = 'BooksTabRoute';
 }
 
 class LanguagesTabRoute extends _i1.PageRouteInfo {
-  const LanguagesTabRoute() : super(name, path: 'languages-tab-page');
+  const LanguagesTabRoute() : super(name, path: 'languages');
 
   static const String name = 'LanguagesTabRoute';
 }
